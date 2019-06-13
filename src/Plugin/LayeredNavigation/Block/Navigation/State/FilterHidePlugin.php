@@ -44,7 +44,7 @@ class FilterHidePlugin
     public function afterGetActiveFilters(State $subject, array $filterItems)
     {
         $landingPage = $this->landingPageContext->getLandingPage();
-        if (!$landingPage || $landingPage->getHideSelectedFilters()) {
+        if (!$landingPage || !$landingPage->getHideSelectedFilters()) {
             return $filterItems;
         }
         /**
