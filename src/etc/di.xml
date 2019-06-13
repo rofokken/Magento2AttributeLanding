@@ -49,6 +49,10 @@
 		<plugin name="emicoAttributeLanding" type="Emico\AttributeLanding\Plugin\LayeredNavigation\Block\Navigation\FilterHidePlugin" />
 	</type>
 
+	<type name="Magento\LayeredNavigation\Block\Navigation\State">
+		<plugin name="emicoAttributeLanding" type="Emico\AttributeLanding\Plugin\LayeredNavigation\Block\Navigation\State\FilterHidePlugin" />
+	</type>
+
 	<!-- Sitemap compatibility for Magento 2.2 -->
 	<type name="Magento\Sitemap\Model\Sitemap">
 		<plugin name="emicoAttributeLanding" sortOrder="1" disabled="false" type="Emico\AttributeLanding\Plugin\Model\SitemapPlugin" />
