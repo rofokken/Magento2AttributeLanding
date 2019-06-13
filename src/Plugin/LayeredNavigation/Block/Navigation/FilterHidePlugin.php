@@ -1,20 +1,14 @@
 <?php
 /**
- * @author Bram Gerritsen <bgerritsen@emico.nl>
- * @copyright (c) Emico B.V. 2019
+ * @author : Edwin Jacobs, email: ejacobs@emico.nl.
+ * @copyright : Copyright Emico B.V. 2019.
  */
 
-namespace Emico\AttributeLanding\Block\LayeredNavigation\Navigation;
-
+namespace Emico\AttributeLanding\Plugin\LayeredNavigation\Block\Navigation;
 
 use Emico\AttributeLanding\Model\FilterHider\FilterHiderInterface;
 use Emico\AttributeLanding\Model\LandingPageContext;
 use Magento\LayeredNavigation\Block\Navigation;
-
-/**
- * @author Bram Gerritsen <bgerritsen@emico.nl>
- * @copyright (c) Emico B.V. 2019
- */
 
 class FilterHidePlugin
 {
@@ -33,8 +27,10 @@ class FilterHidePlugin
      * @param LandingPageContext $landingPageContext
      * @param FilterHiderInterface $filterHider
      */
-    public function __construct(LandingPageContext $landingPageContext, FilterHiderInterface $filterHider)
-    {
+    public function __construct(
+        LandingPageContext $landingPageContext,
+        FilterHiderInterface $filterHider
+    ) {
         $this->filterHider = $filterHider;
         $this->landingPageContext = $landingPageContext;
     }

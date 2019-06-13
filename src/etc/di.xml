@@ -25,7 +25,7 @@
 	</virtualType>
 
 	<virtualType name="Magento\LayeredNavigation\Block\Navigation\Category">
-		<plugin name="emicoAttributeLanding" type="Emico\AttributeLanding\Block\LayeredNavigation\Navigation\FilterHidePlugin" />
+		<plugin name="emicoAttributeLanding" type="Emico\AttributeLanding\Plugin\LayeredNavigation\Block\Navigation\FilterHidePlugin" />
 	</virtualType>
 
 	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
@@ -45,11 +45,8 @@
 		</arguments>
 	</type>
 
-	<type name="Magento\Catalog\Model\Layer\State">
-		<plugin name="emicoAttributeLanding" type="Emico\AttributeLanding\Model\Catalog\Layer\State\Plugin" />
-	</type>
 	<type name="Magento\LayeredNavigation\Block\Navigation">
-		<plugin name="emicoAttributeLanding" type="Emico\AttributeLanding\Block\LayeredNavigation\Navigation\FilterHidePlugin" />
+		<plugin name="emicoAttributeLanding" type="Emico\AttributeLanding\Plugin\LayeredNavigation\Block\Navigation\FilterHidePlugin" />
 	</type>
 
 	<!-- Sitemap compatibility for Magento 2.2 -->
